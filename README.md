@@ -167,12 +167,12 @@ For concurrency of our lambda function we could first make a version of the $LAT
 Depending of the demand we could set the:
 
 Provisioned Concurrency
-![Provisioned Concurrency](doc/p5/provisioned Concurrency.PNG "width=80%")
+![Provisioned Concurrency](doc/p5/provisioned_concurrency.PNG "width=80%")
 
 or
 
 Reserved Concurrency
-![Reserved Concurrency](doc/p5/concurrency_version.PNG "width=80%")
+![Reserved Concurrency](doc/p5/reserved_concurrency.PNG "width=80%")
 
 
 
