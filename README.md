@@ -31,7 +31,7 @@ We are completing the following steps:
 
 </details>
 
-details open>
+<details open>
 <summary> <b>Files and Folders<b></summary>
 
 - **doc**: contains the images referenced here.
