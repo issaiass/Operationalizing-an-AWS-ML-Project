@@ -1,5 +1,3 @@
-  GNU nano 2.9.8                                                                                        script.sh                                                                                                  
-
 echo "[INFO] - Downloading Dataset START"
 wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
 echo "[INFO] - Downloading Dataset FINISH"
