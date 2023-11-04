@@ -81,7 +81,7 @@ For the deployment part we selected to launch inside the notebook instance an ml
 
 #### EC2 Training
 
-We selected a g2.2xlarge EC2 Deep Learning Instance because is it has PyTorch installed and we do not need to much processing power too for training.
+We selected a g2.2xlarge EC2 Deep Learning Instance because is it has PyTorch installed and we need a GPU accelerated computing power to train faster.
 
 ![Sagemaker EC2 Instance](doc/p2/ec2_instance1.PNG "width=80%")
 
