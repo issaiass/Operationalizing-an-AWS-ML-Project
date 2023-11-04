@@ -60,25 +60,28 @@ details open>
 
 #### Training and Deployment
 
-We selected a standard instance ml.t3.xlarge 4vCPUs, 16 GiB RAM, costing $0.20/hr.
+We created an S3 Bucket for storing the train, valid, test and lab.jpg image.
+
+![Sagemaker Instance](doc/p1/sm_s3_outputs1.PNG "width=80%")
+
+We selected a standard studio notebook instance ml.t3.xlarge 4vCPUs, 16 GiB RAM, costing $0.20/hr.
 
 ![Sagemaker Instance](doc/p1/sm_instance1.PNG "width=80%")
 
 The reason for the decision was that we could not download and upload files from our initial ml.t3.medium due to 4Gb of data and other files there occuping space that are important and we must hold for some time.  
 
-For our training stage we selected an accelerated computing instance of ml.g4dn.xlarge, 4vCPUs, 16 GiB RAM costing $0.736/hr. 
+For our training stage we launched inside the notebook an accelerated computing instance of ml.g4dn.xlarge, 4vCPUs, 16 GiB RAM costing $0.736/hr. 
 
 ![Sagemaker HPO](doc/p1/sm_hpo1.PNG "width=80%")
 
-For the deployment part we selected an ml.m5.xlarge because we do not need more computing power for the development.
+For the deployment part we selected to launch inside the notebook instance an ml.m5.xlarge because we do not need more computing power for the deploy.
 
 ![Sagemaker Endpoint](doc/p1/sm_endpoint.PNG "width=80%")
 
-You can see more images on *doc/p1* folder.
 
 #### EC2 Training
 
-We selected a t2.micro free Tier AWS EC2 Deep Learning Instance because is it has PyTorch installed and we do not need to much processing power too for training.
+We selected a g2.2xlarge EC2 Deep Learning Instance because is it has PyTorch installed and we do not need to much processing power too for training.
 
 ![Sagemaker EC2 Instance](doc/p2/ec2_instance1.PNG "width=80%")
 
